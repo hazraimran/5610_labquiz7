@@ -10,7 +10,7 @@ to it using Node.js.
 
 ### Step 1: Download MongoDB
 
-1.  Go to the MongoDB Download Page**:**
+1.  Go to the MongoDB Download Page
     <https://www.mongodb.com/try/download/community>
 
 2.  Under the Platform dropdown, choose Windows. Make sure the Package

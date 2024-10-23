@@ -52,8 +52,7 @@ to it using Node.js.
     server running on your local machine.
 
 ![A screenshot of a chat Description automatically
-generated](./media/media/image1.png){width="4.513623140857393in"
-height="2.4583825459317583in"}
+generated](./media/media/image1.png)
 
 12. Explore Databases and Collections:
 
@@ -82,8 +81,7 @@ height="2.4583825459317583in"}
 The \"dependencies\" field in package.json will have a line added for
 \"mongodb\".![A screen shot of a computer program Description
 automatically
-generated](./media/media/image2.png){width="4.01366469816273in"
-height="2.186075021872266in"}
+generated](./media/media/image2.png)
 
 For macOS
 
@@ -98,22 +96,19 @@ Automatic Installation (Recommended)
 
 1.  Copy the code into script.js
 
-![](./media/media/image3.png){width="4.893728127734033in"
-height="4.580550087489064in"}
+![](./media/media/image3.png)
 
 2.  Run [node script.js]{.underline} to execute the script and observe
     the functions of insertOne, findOne, and find. *node script.js*
 
 ![A computer screen with white text and green text Description
 automatically
-generated](./media/media/image4.png){width="3.907678258967629in"
-height="2.0115518372703414in"}
+generated](./media/media/image4.png)
 
 3.  You can see the data in MongoDB Compass.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image5.png){width="6.5in"
-height="3.2465277777777777in"}
+generated](./media/media/image5.png)
 
 Activity 2 - MongoDB Atlas
 
@@ -142,16 +137,14 @@ cluster (usually **M0 Sandbox**), and select a suitable region
 few minutes for the cluster to be created.
 
 ![A white and blue background Description automatically
-generated](./media/media/image6.png){width="6.5in"
-height="1.3555555555555556in"}
+generated](./media/media/image6.png)
 
 3.  **Set up database user and IP access permissions**\
     Click \"Database Access\" on the left, then click \"Add New Database
     User\" to create a username and password, which will be used to
     connect to the database from your application.![A screenshot of a
     computer Description automatically
-    generated](./media/media/image7.png){width="6.5in"
-    height="2.286111111111111in"}
+    generated](./media/media/image7.png)
 
 In the \"Network Access\" tab, click \"Add IP Address\" and choose \"Add
 current IP address\". You can choose to allow access from your current
@@ -160,7 +153,7 @@ whitelist). For security, restricting to your current IP is recommended
 unless working in a collaborative project.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image8.png){width="6.5in" height="1.09375in"}
+generated](./media/media/image8.png)
 
 4.  **Connect to MongoDB Atlas using Compass**\
     Go back to the overview page and click the \"Connect\" button, then
@@ -168,8 +161,7 @@ generated](./media/media/image8.png){width="6.5in" height="1.09375in"}
     [mongodb+srv://ln541758:\<db_password\>@kanbas.9ijmjtl.mongodb.net/.]{.underline}
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image9.png){width="3.7287609361329834in"
-height="3.648688757655293in"}
+generated](./media/media/image9.png)
 
 After opening Compass, click the \"+\" button next to \"connections\".
 In the URI field, paste the connection string copied from Atlas, and
@@ -177,8 +169,7 @@ remember to replace it with the username and password you created in
 Step 3.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image10.png){width="6.5in"
-height="3.546527777777778in"}
+generated](./media/media/image10.png)
 
 5.  Connect to MongoDB Atlas through the application\
     Make sure you have installed the MongoDB driver in your Node.js
@@ -186,16 +177,14 @@ height="3.546527777777778in"}
     code to connect to Atlas and save the code in a file called test.js.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image11.png){width="6.5in"
-height="2.046527777777778in"}
+generated](./media/media/image11.png)
 
 In the code, replace \<username\> and \<password\> with the username and
 password you created in Atlas.
 
 6.  Run the code: [node test.js]{.underline}
 
-![](./media/media/image12.png){width="5.708333333333333in"
-height="0.4583333333333333in"}
+![](./media/media/image12.png)
 
 ACTIVITY 3 - CRUD Activity: Task Manager Application
 

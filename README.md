@@ -53,7 +53,8 @@ to it using Node.js.
     server running on your local machine.
 
 ![A screenshot of a chat Description automatically
-generated](./media/media/image1.png)
+generated](media/image1.png){width="4.513623140857393in"
+height="2.4583825459317583in"}
 
 12. Explore Databases and Collections:
 
@@ -81,8 +82,8 @@ generated](./media/media/image1.png)
 
 The \"dependencies\" field in package.json will have a line added for
 \"mongodb\".![A screen shot of a computer program Description
-automatically
-generated](./media/media/image2.png)
+automatically generated](media/image2.png){width="4.01366469816273in"
+height="2.186075021872266in"}
 
 For macOS
 
@@ -97,21 +98,23 @@ Automatic Installation (Recommended)
 
 1.  Copy the code into script.js
 
-![](./media/media/image3.png)
+![](media/image3.png){width="4.893728127734033in"
+height="4.580550087489064in"}
 
 2.  Run [node script.js]{.underline} to execute the script and observe
     the functions of insertOne, findOne, and find. *node script.js*
 
 ![A computer screen with white text and green text Description
-automatically
-generated](./media/media/image4.png)
+automatically generated](media/image4.png){width="3.907678258967629in"
+height="2.0115518372703414in"}
 
 3.  You can see the data in MongoDB Compass.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image5.png)
+generated](media/image5.png){width="6.5in"
+height="3.2465277777777777in"}
 
-Activity 2 - MongoDB Atlas
+**Activity 2 - MongoDB Atlas**
 
 MongoDB Atlas is a fully managed, cloud-based database platform that
 allows you to access your database from anywhere with an internet
@@ -138,14 +141,16 @@ cluster (usually **M0 Sandbox**), and select a suitable region
 few minutes for the cluster to be created.
 
 ![A white and blue background Description automatically
-generated](./media/media/image6.png)
+generated](media/image6.png){width="6.5in"
+height="1.3555555555555556in"}
 
 3.  **Set up database user and IP access permissions**\
     Click \"Database Access\" on the left, then click \"Add New Database
     User\" to create a username and password, which will be used to
     connect to the database from your application.![A screenshot of a
     computer Description automatically
-    generated](./media/media/image7.png)
+    generated](media/image7.png){width="6.5in"
+    height="2.286111111111111in"}
 
 In the \"Network Access\" tab, click \"Add IP Address\" and choose \"Add
 current IP address\". You can choose to allow access from your current
@@ -154,7 +159,7 @@ whitelist). For security, restricting to your current IP is recommended
 unless working in a collaborative project.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image8.png)
+generated](media/image8.png){width="6.5in" height="1.09375in"}
 
 4.  **Connect to MongoDB Atlas using Compass**\
     Go back to the overview page and click the \"Connect\" button, then
@@ -162,7 +167,8 @@ generated](./media/media/image8.png)
     [mongodb+srv://ln541758:\<db_password\>@kanbas.9ijmjtl.mongodb.net/.]{.underline}
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image9.png)
+generated](media/image9.png){width="3.7287609361329834in"
+height="3.648688757655293in"}
 
 After opening Compass, click the \"+\" button next to \"connections\".
 In the URI field, paste the connection string copied from Atlas, and
@@ -170,7 +176,8 @@ remember to replace it with the username and password you created in
 Step 3.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image10.png)
+generated](media/image10.png){width="6.5in"
+height="3.546527777777778in"}
 
 5.  Connect to MongoDB Atlas through the application\
     Make sure you have installed the MongoDB driver in your Node.js
@@ -178,16 +185,18 @@ generated](./media/media/image10.png)
     code to connect to Atlas and save the code in a file called test.js.
 
 ![A screenshot of a computer Description automatically
-generated](./media/media/image11.png)
+generated](media/image11.png){width="6.5in"
+height="2.046527777777778in"}
 
 In the code, replace \<username\> and \<password\> with the username and
 password you created in Atlas.
 
 6.  Run the code: [node test.js]{.underline}
 
-![](./media/media/image12.png)
+![](media/image12.png){width="5.708333333333333in"
+height="0.4583333333333333in"}
 
-ACTIVITY 3 - CRUD Activity: Task Manager Application
+**ACTIVITY 3 -** CRUD Activity: Task Manager Application
 
 Create a Node.js application that performs **Create, Read, Update, and
 Delete (CRUD)** operations on a MongoDB Atlas database. You will connect
@@ -255,7 +264,96 @@ tasks.
 
 ### 
 
+**Activity 4 - Deploying taskManager.js on Heroku**
+
+What you need?
+
+-   A GitHub repository with the lab code.
+
+-   MongoDB Atlas setup (with a working connection string).
+
+-   Install Node.js and npm on your local machine.
+
+-   Install Heroku CLI.
+
+1.  Go to Heroku and sign up for a free account.
+
+2.  Download and install the [Heroku
+    CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+3.  Verify the installation by running: *heroku \--version*
+
+4.  Navigate to your project directory. Make sure the app works locally
+    with MongoDB Atlas before deploying to Heroku. Test your CRUD
+    operations in taskManager.js.
+
+5.  Ensure that your package.json file has a start script pointing to
+    taskManager.js
+
+{
+
+\"name\": \"task-manager-app\",
+
+\"version\": \"1.0.0\",
+
+\"description\": \"Node.js CRUD application\",
+
+\"main\": \"taskManager.js\",
+
+\"scripts\": {
+
+\"start\": \"node taskManager.js\"
+
+},
+
+\"dependencies\": {
+
+\"mongodb\": \"\^4.4.0\"
+
+}
+
+}
+
+6.  In your project directory, create a file named Procfile (no file
+    extension). Add this line to the Procfile: *web: node
+    taskManager.js.* This tells Heroku to start the app using
+    taskManager.js when it runs the web dyno.
+
+7.  Push your code to GitHub
+
+8.  Log in to Heroku by running the following command and following the
+    browser login prompt: *heroku login*
+
+9.  Create a new Heroku app for your project: *heroku create
+    your-app-name*
+
+Replace your-app-name with a unique name for your app. Heroku will
+create an app and provide a URL for it (e.g.,
+https://your-app-name.herokuapp.com).
+
+10. Since you're using MongoDB Atlas, you need to set the MongoDB URI as
+    an environment variable in Heroku:
+
+heroku config:set MONGODB_URI=\"your_mongodb_atlas_connection_string\"
+
+Replace your_mongodb_atlas_connection_string with your actual MongoDB
+Atlas connection string
+
+11. Deploy the app to Heroku by pushing your code: *git push heroku
+    master*
+
+12. Once the deployment is successful, you can open your app in the
+    browser.
+
+13. Test your app by interacting with the CRUD operations. Ensure that
+    the MongoDB Atlas connection works and that you can create, read,
+    update, and delete tasks.
+
+14. If you encounter any issues, you can view the Heroku log : *heroku
+    logs \--tail*
+
 ### Deliverables:
 
 -   Submit your taskManager.js script that performs the CRUD operations.
 
+-   Submit a link to the live application hosted on Heroku

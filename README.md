@@ -1,4 +1,5 @@
-### **Lab 7**
+
+### 5610_Lab 7 - MongoDB
 
 > **MongoDB**
 
@@ -257,5 +258,4 @@ tasks.
 ### Deliverables:
 
 -   Submit your taskManager.js script that performs the CRUD operations.
-# 5610_labquiz7
-MongoDB
+

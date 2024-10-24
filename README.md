@@ -1,8 +1,6 @@
 
 ### 5610_Lab 7 - MongoDB
 
-> **MongoDB**
-
 The objective of this lab is to gain hands-on experience in setting up
 and using MongoDB Atlas, a cloud-based database platform. You will learn
 how to install MongoDB, create a database cluster in Atlas, and connect
@@ -41,11 +39,13 @@ to it using Node.js.
         path should now look like this: C:\\data\\db. This is where
         MongoDB will store its databases.
 
-### Start MongoDB Service. Open Command prompt and type the following command and press **Enter** *net start MongoDB.* 
+### Start MongoDB Service. 
+Open Command prompt and type the following command and press Enter 
+*net start MongoDB.* 
 
-### This will start the MongoDB server as a Windows service. If MongoDB has been installed correctly, you should see a message like:
+This will start the MongoDB server as a Windows service. If MongoDB has been installed correctly, you should see a message like:
 
-> *The MongoDB service was started successfully.*
+*The MongoDB service was started successfully.*
 
 11. Connect to MongoDB. In the connection dialog, you can connect to
     your local MongoDB instance by using the default connection string:
@@ -75,7 +75,11 @@ generated](media/image1.png)
     -   Delete documents by selecting them and clicking the Delete
         button.
 
-### Use MongoDB with Node.js. Now that MongoDB is installed and running, you can integrate it with Node.js**.** Install the MongoDB Node.js Driver**. Create Lab7 and open in VSCode.** Run the following command to install the MongoDB Node.js driver:
+### Use MongoDB with Node.js. 
+Now that MongoDB is installed and running, you can integrate it with Node.js
+Install the MongoDB Node.js Driver. 
+Create Lab7 and open in VSCode.
+Run the following command to install the MongoDB Node.js driver:
 
 > *npm install mongodb.*
 
@@ -90,7 +94,7 @@ Automatic Installation (Recommended)
 -   You can use Homebrew for a simple installation. Run the following
     command:
 
-> [brew install mongodb-community@6.0]{.underline}
+> [brew install mongodb-community@6.0]
 
 **ACTIVITY 1**
 
@@ -254,7 +258,7 @@ tasks.
 ### 
 
 **Activity 4 - Deploying taskManager.js on Heroku**
-
+(This need to be checked as Heoku only have paid version)
 What you need?
 
 -   A GitHub repository with the lab code.
